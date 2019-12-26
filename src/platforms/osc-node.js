@@ -33,8 +33,7 @@
         modules = [
             require("../osc.js"),
             require("../osc-transports.js"),
-            require("./osc-websocket-client.js"),
-            require("./osc-node-serialport.js")
+            require("./osc-websocket-client.js")
         ],
         osc = shallowMerge({}, modules);
 
