@@ -27,9 +27,9 @@
         "grunt": "1.0.4",
         "grunt-contrib-clean": "2.0.0",
         "grunt-contrib-concat": "1.0.1",
-        "grunt-replace": "1.0.1",
         "grunt-contrib-jshint": "2.1.0",
         "grunt-contrib-uglify": "4.0.1",
+        "grunt-replace": "1.0.1",
         "infusion": "3.0.0-dev.20190328T144119Z.ec44dbfab",
         "jquery": "3.4.1",
         "node-jqunit": "1.1.8",
@@ -38,6 +38,7 @@
     },
     "dependencies": {
         "long": "4.0.0",
+        "react-native-udp": "^2.6.1",
         "slip": "1.0.2",
         "wolfy87-eventemitter": "5.2.6",
         "ws": "7.0.0"

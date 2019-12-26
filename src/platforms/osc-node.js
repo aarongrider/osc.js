@@ -28,7 +28,7 @@
         return target;
     };
 
-    var dgram = require("dgram"),
+    var dgram = require("react-native-udp"),
         net = require("net"),
         WebSocket = require("ws"),
         modules = [
