@@ -29,7 +29,6 @@
     };
 
     var dgram = require("react-native-udp"),
-        net = require("net"),
         WebSocket = require("ws"),
         modules = [
             require("../osc.js"),
@@ -182,16 +181,10 @@
         address = address || o.address;
         port = port !== undefined ? port : o.port;
 
-        if (!this.socket) {
-            this.socket = net.connect({
-                port: port,
-                host: address
-            });
-        } else {
+        if (this.socket) {{
             this.socket.connect(port, address);
+            this.emit("open", this.socket);
         }
-
-        this.emit("open", this.socket);
     };
 
     p.listen = function () {
