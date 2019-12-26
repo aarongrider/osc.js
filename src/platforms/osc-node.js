@@ -181,7 +181,7 @@
         address = address || o.address;
         port = port !== undefined ? port : o.port;
 
-        if (this.socket) {{
+        if (this.socket) {
             this.socket.connect(port, address);
             this.emit("open", this.socket);
         }
